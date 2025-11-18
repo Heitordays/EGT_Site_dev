@@ -1,7 +1,7 @@
 // src/components/Header/Header.jsx
 
 import React from 'react';
-import 'C:/Users/heide/Desktop/meu-site/src/assets/Components/Header/Header.css';
+import './Header.css';
 // import './Header.css'; // Não se esqueça de descomentar a importação dos estilos
 
 const Header = ({ headerClasses }) => {
