@@ -83,7 +83,7 @@ const Hero = () => {
             <div className="circle-overlay" ref={circleOverlayRef}></div>
 
             <div className="play-button-container">
-                <a href="https://twitch.tv/_preitor" target="_blank" className="playBut">
+                <a href="https://twitch.tv/preitor_" target="_blank" className="playBut">
 
                     {/* 1. O elemento SVG */}
                     <svg version="1.1"
@@ -101,8 +101,6 @@ const Hero = () => {
                 </a>
             </div>
 
-            {/* ❌ REMOVA O SPAN DAQUI: Ele estava fora do contêiner e fora do link. */}
-            {/* <span className="play-text">PLAY VIDEO</span> */}
 
         </section>
     );
