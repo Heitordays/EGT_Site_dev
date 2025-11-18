@@ -1,0 +1,91 @@
+/* src/pages/ContateNos/ContateNos.css */
+
+/* 1. Fundo da Seção (o verde escuro da imagem) */
+.dark-green-bg {
+    background-color: #387b5a; /* Tom de verde escuro */
+    color: white;
+    padding: 80px 20px;
+    /* Garante que o formulário comece abaixo do Header fixo */
+    min-height: calc(100vh - 80px); 
+    padding-top: 120px; /* Desce o formulário para evitar o Header */
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 2. Layout de Duas Colunas (Row Group) */
+.form-group-row {
+    display: flex;
+    gap: 30px; /* Espaço entre as colunas */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex-grow: 1; 
+    margin-top: 20px;
+}
+
+/* 3. Estilo dos Labels */
+.contact-form label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    color: white; 
+}
+
+/* 4. Estilo dos Inputs (apenas linha inferior) */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    background: transparent; 
+    border: none;
+    border-bottom: 1px solid white; /* Linha de sublinhado branca */
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    outline: none; 
+    transition: border-bottom-color 0.3s ease;
+}
+
+/* Cor da linha ao focar/digitar */
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-bottom-color: #f7f7f7; 
+}
+
+/* Estilo para a placeholder (texto "Write your message") */
+.contact-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ajustes para o Select (Dropdown) */
+.contact-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Estilo do Botão de Envio */
+.submit-btn {
+    margin-top: 40px;
+    padding: 12px 30px;
+    background-color: white;
+    color: #387b5a; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
