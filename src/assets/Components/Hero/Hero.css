@@ -1,6 +1,6 @@
 /*
  * ==========================================
- * 4. SEÇÃO HERO (OTIMIZADO)
+ * 4. SEÇÃO HERO (OTIMIZADO) - BASE LAYOUT
  * ==========================================
  */
 
@@ -63,7 +63,105 @@
 }
 
 /* Ajuste para Animação SplitText */
-/* Essencial para criar a máscara de revelação */
 .hero-text .line { 
     overflow: hidden;
+}
+
+/*
+ * ==========================================
+ * ESTILOS DO BOTÃO PLAY (SVG + TEXTO)
+ * ==========================================
+ */
+
+.play-button-container {
+    width: 100%;
+    text-align: center;
+    
+    /* POSICIONAMENTO FINAL */
+    position: absolute; 
+    top: 80%; /* Posição ajustada abaixo do texto */
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 10;
+}
+
+/* Link Principal - Usa Flexbox para empilhar SVG e texto */
+.playBut {
+    display: inline-flex;
+    flex-direction: column; /* Empilha verticalmente (SVG acima, texto abaixo) */
+    align-items: center; /* Centraliza SVG e texto horizontalmente */
+    text-decoration: none;
+    color: white; /* Cor do texto padrão */
+    transition: all 0.5s ease;
+    cursor: pointer;
+    opacity: 1; 
+}
+
+/* Texto "PLAY VIDEO" */
+.play-text {
+    margin-top: 10px; /* Espaço entre o SVG e o texto */
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s ease; 
+}
+
+/* Círculo do SVG */
+.circle {
+    stroke: #000000; 
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.3;
+}
+
+/* Triângulo do SVG */
+.playBut .triangle {
+    transition: all 0.7s ease-in-out;
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: white; 
+    transform: translateY(0);
+}
+
+/* ------------------------------------------------------------------ */
+/* Efeito HOVER */
+/* ------------------------------------------------------------------ */
+
+.playBut:hover .triangle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: #000000; /* Cor da seta no hover */
+    animation: nudge 0.7s ease-in-out;
+}
+
+.playBut:hover .circle {
+    stroke-dashoffset: 0;
+    opacity: 1;
+}
+
+.playBut:hover .play-text {
+    color: #000000; /* Texto também muda de cor no hover */
+}
+
+/* ------------------------------------------------------------------ */
+/* Keyframes para a Animação 'nudge' (empurrão) */
+/* ------------------------------------------------------------------ */
+@keyframes nudge {
+    0% {
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    70% {
+        transform: translateX(-2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }

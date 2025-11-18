@@ -57,27 +57,6 @@ section {
   background: var(--verde-claro);
 }
 
-.play-button {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  color: black;
-  border-radius: 50%;
-  font-size: 32px;
-  width: 90px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s;
-  z-index: 5;
-}
-
 /*
  * ==========================================
  * 7. SEÇÃO INDÚSTRIAS
