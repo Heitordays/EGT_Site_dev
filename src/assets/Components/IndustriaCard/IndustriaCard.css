@@ -1,0 +1,265 @@
+/* Configuração do Cartão */
+.scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    gap: 24px;
+    /* Espaçamento entre os cartões */
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+}
+
+.industria-card {
+    /* Define a largura do cartão para 1/3 da tela, menos o gap, para o scroll-snap */
+    flex: 0 0 calc(100vw / 3 - 48px);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    /* Importante para conter a imagem recortada */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease-out;
+    transition: box-shadow 0.3s ease;
+    /* Remova o transition do 'transform' */
+    box-sizing: border-box;
+    z-index: 1;
+    /* Garante que o card ativo fique acima dos outros */
+    border-radius: 0px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito de Hover */
+.industria-card:hover .card-img {
+    /* CHAVE: Expande o círculo para mostrar a imagem completa no hover */
+    clip-path: circle(150% at center);
+}
+
+/* Imagem e Recorte Circular */
+.card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* CHAVE: Recorte circular no estado normal */
+    clip-path: circle(200px at center);
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: clip-path 0.8s ease;
+}
+
+
+
+/* Overlay (para escurecer a imagem no hover) */
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.industria-card:hover .card-overlay {
+    opacity: 1;
+}
+
+/* Cores de Fundo (Aplicadas via corClasse no JSX) */
+.ouro {
+    background-color: #C4944B;
+}
+
+.azul-escuro {
+    background-color: #012343;
+}
+
+/* src/styles.css ou IndustriaCard.css */
+
+/* ---------------------------------------------------- */
+/* B. Painel Lateral (Texto de Descrição) */
+/* ---------------------------------------------------- */
+.card-side-panel {
+    position: absolute;
+    top: 0;
+    /* CHAVE: Posiciona o painel no final da largura original (100%) */
+    left: calc(100% - 24px);
+    /* -24px para compensar o gap, ou apenas 100% */
+
+    width: 0;
+    /* Largura zero inicial - será animada pelo GSAP */
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: var(--preto-profundo);
+    z-index: 10;
+
+    opacity: 0;
+    /* Opacidade inicial zero */
+
+    /* MANTENHA os estilos de texto e layout (display: flex, justify-content: center, etc.) */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---------------------------------------------------- */
+/* C. Wrapper de Imagem */
+/* ---------------------------------------------------- */
+
+.industria-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.industria-card:hover .card-img {
+    clip-path: circle(150% at center);
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.industria-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-header .arrow {
+    font-size: 40px;
+    transition: transform 0.3s ease;
+}
+
+.industria-card:hover .card-header .arrow {
+    transform: translateX(5px);
+}
+
+/* Cores de Fundo (Modificadores de Indústria) */
+.ouro {
+    background-color: #C4944B;
+}
+
+.azul-escuro {
+    background-color: #012343;
+}
+
+.ciano {
+    background-color: #00A8B5;
+}
+
+.verde-escuro {
+    background-color: #4B7052;
+}
+
+.outras {
+    background-color: #5C5C5C;
+}
+
+.industria-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    z-index: 5;
+}
+
+.industria-card:hover .card-img {
+    clip-path: circle(150% at center);
+}
+
+.card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+    transition: opacity 0.4s ease;
+    opacity: 0;
+}
+
+.industria-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.card-header .arrow {
+    font-size: 40px;
+    transition: transform 0.3s ease;
+}
+
+.industria-card:hover .card-header .arrow {
+    transform: translateX(5px);
+}
+
+.ouro {
+    background-color: #C4944B;
+}
+
+.azul-escuro {
+    background-color: #012343;
+}
+
+.ciano {
+    background-color: #00A8B5;
+}
+
+.verde-escuro {
+    background-color: #4B7052;
+}
+
+.outras {
+    background-color: #5C5C5C;
+}
+
+@media (max-width: 1024px) {
+    .scroll-wrapper {
+        padding: 0 20px;
+    }
+
+    .scroll-container {
+        display: flex;
+        overflow-x: scroll;
+        padding-bottom: 20px;
+        gap: 24px;
+        /* Espaçamento entre os cartões */
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 20px;
+    }
+}

@@ -1,0 +1,11 @@
+/*
+ * ==========================================
+ * 9. FOOTER
+ * ==========================================
+ */
+footer {
+  background: var(--preto-profundo);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
