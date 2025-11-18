@@ -1,0 +1,60 @@
+/* src/assets/Components/LanguageSwitchButton/LanguageSwitchButton.css */
+
+.language-dropdown-container {
+    /* ... (Estilos existentes) ... */
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+
+/* 1. Estilização do Botão de Globo */
+.globe-icon-button {
+    /* Oculta a seta, se ela tiver sido mantida do código anterior */
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem; /* Ajusta o tamanho do globo */
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px; /* Deixa o botão quadrado com cantos arredondados */
+    transition: background-color 0.2s;
+    /* Remove a margem extra que existia se você usava a seta */
+}
+
+.globe-icon-button:hover {
+    background-color: #333; /* Efeito hover sutil */
+}
+
+/* 2. Estilização do Menu Dropdown (Fundo Escuro) */
+.lang-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 180px; /* Maior para caber o texto */
+    background-color: #222; /* Fundo mais escuro */
+    border-radius: 10px; /* Cantos bem arredondados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 8px 0;
+}
+
+/* 3. Estilização das Opções e do Ponto */
+.lang-option {
+    color: white;
+    padding: 10px 15px; /* Espaçamento confortável */
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.lang-option:hover {
+    background-color: #333; /* Efeito hover sutil */
+}
+
+.lang-indicator {
+    /* Estiliza o ponto (•) para ter um espaço à direita */
+    margin-right: 10px;
+    font-size: 1.2rem;
+    width: 15px; /* Garante que o espaço do ponto seja consistente */
+    text-align: center;
+}
