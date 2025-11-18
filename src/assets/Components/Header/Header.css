@@ -60,6 +60,28 @@
     gap: 30px;
 }
 
+.cta-button {
+    /* Padding e Margem */
+    display: inline-block; /* Permite aplicar padding e altura */
+    padding: 8px 15px;
+    margin-left: 15px; /* Separa um pouco dos outros links */
+
+    /* Fundo e Contorno */
+    background-color: transparent; /* Fundo inicial transparente */
+    color: white; /* Texto branco */
+    border: 2px solid white; /* Contorno branco */
+    border-radius: 5px; /* Cantos arredondados */
+    font-weight: 600; /* Deixa o texto mais evidente */
+    text-decoration: none; /* Remove o sublinhado padrão do link */
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
 header {
     background-color: transparent;
     transition: background-color 0.3s ease;
