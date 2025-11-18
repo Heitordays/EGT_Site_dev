@@ -1,0 +1,69 @@
+/*
+ * ==========================================
+ * 4. SEÇÃO HERO (OTIMIZADO)
+ * ==========================================
+ */
+
+/* Container Principal - Define a altura da visualização e o contexto da imagem */
+.hero-img-section {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Altura do Hero */
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Imagem de Fundo */
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem cubra todo o container */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Container do Texto (Centralizado) */
+.hero-text {
+    position: absolute;
+    top: 45%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5; 
+    color: white; 
+    text-align: center;
+    pointer-events: none; /* Deixa o texto "vazado" para permitir cliques */
+    width: 80%;
+    max-width: 800px; 
+}
+
+/* Estilos do Título H1 */
+.hero-text h1 {
+    font-size: 4rem; 
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
+}
+
+/* Overlay Circular (para a animação ScrollTrigger) */
+.circle-overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    background: var(--verde-principal);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Ajuste para Animação SplitText */
+/* Essencial para criar a máscara de revelação */
+.hero-text .line { 
+    overflow: hidden;
+}
