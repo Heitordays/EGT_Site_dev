@@ -60,7 +60,7 @@
     gap: 30px;
 }
 
-.cta-button {
+.ctt-button {
     /* Padding e Margem */
     display: inline-block; /* Permite aplicar padding e altura */
     padding: 8px 15px;
@@ -77,7 +77,7 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta-button:hover {
+.ctt-button:hover {
     background-color: white;
     color: #1a1a1a;
 }

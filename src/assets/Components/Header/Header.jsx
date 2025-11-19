@@ -22,7 +22,7 @@ const Header = ({ headerClasses }) => {
                         <li><a href="carreira">Carreira</a></li>
                         <li><a href="servicos">Serviços</a></li>
                         <li><a href="publicacoes">Publicações</a></li>
-                        <li><a href="contate-nos" className="cta-button">Contate-nos!</a></li>
+                        <li><a href="contate-nos" className="ctt-button">Contate-nos!</a></li>
                     </ul>
                 </div>
             </div>
