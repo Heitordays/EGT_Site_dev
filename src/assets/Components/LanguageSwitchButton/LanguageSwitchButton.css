@@ -22,7 +22,7 @@
 }
 
 .globe-icon-button:hover {
-    background-color: #333; /* Efeito hover sutil */
+    background-color: #1f243D; /* Efeito hover sutil */
 }
 
 /* 2. Estilização do Menu Dropdown (Fundo Escuro) */
@@ -31,9 +31,8 @@
     top: 100%;
     right: 0;
     min-width: 180px; /* Maior para caber o texto */
-    background-color: #222; /* Fundo mais escuro */
     border-radius: 10px; /* Cantos bem arredondados */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    background-color: #1f243D; /* Efeito hover sutil */
     padding: 8px 0;
 }
 
@@ -48,7 +47,7 @@
 }
 
 .lang-option:hover {
-    background-color: #333; /* Efeito hover sutil */
+    background-color: #2a9600; /* Efeito hover sutil */
 }
 
 .lang-indicator {

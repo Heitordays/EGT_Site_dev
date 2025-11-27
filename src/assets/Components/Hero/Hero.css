@@ -58,6 +58,7 @@
     background: var(--verde-principal);
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(1);
+    background: #095700;
     z-index: 1;
     pointer-events: none;
 }
@@ -109,7 +110,7 @@
 
 /* Círculo do SVG */
 .circle {
-    stroke: #083f01;
+    stroke: #97d225;
     stroke-dasharray: 650;
     stroke-dashoffset: 650;
     transition: all 0.5s ease-in-out;
@@ -132,7 +133,7 @@
 .playBut:hover .triangle {
     stroke-dashoffset: 0;
     opacity: 1;
-    stroke: #083f01; /* Cor da seta no hover */
+    stroke: #97d225; /* Cor da seta no hover */
     animation: nudge 0.7s ease-in-out;
 }
 
@@ -142,7 +143,7 @@
 }
 
 .playBut:hover .play-text {
-    color: #083f01; /* Texto também muda de cor no hover */
+    color: #97d225; /* Texto também muda de cor no hover */
 }
 
 /* ------------------------------------------------------------------ */

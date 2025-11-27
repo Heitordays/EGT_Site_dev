@@ -73,7 +73,7 @@ const Hero = () => {
 
     return (
         <section className="hero-img-section" ref={heroRef}>
-            <img src="1584695878990.jpg" alt="Imagem Mineração" className="hero-img" />
+            <img src="lip.png" alt="Imagem Mineração" className="hero-img" />
             <div className="hero-text">
                 <h1 ref={heroTextRef} style={{ opacity: 0 }}>
                     Fostering ingenuity to better value nature.
