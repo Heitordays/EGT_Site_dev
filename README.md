@@ -1,21 +1,19 @@
+
+````md
 # EGT Site – Ambiente de Desenvolvimento
 
 Projeto de site desenvolvido utilizando **Vite** como bundler e ambiente de desenvolvimento moderno para front-end.  
 Este repositório contém a estrutura base do site, incluindo arquivos de configuração, código-fonte e assets estáticos.
 
----
+📌 Tecnologias Utilizadas
 
-## 📌 Tecnologias Utilizadas
+- Node.js
+- Vite
+- JavaScript
+- HTML5
+- CSS3
 
-- **Node.js**
-- **Vite**
-- **JavaScript**
-- **HTML5**
-- **CSS3**
-
----
-
-## 📁 Estrutura Completa de Pastas e Arquivos
+📁 Estrutura Completa de Pastas e Arquivos
 
 EGT_Site_dev/
 │
@@ -55,6 +53,8 @@ EGT_Site_dev/
 │
 └── README.md
     └── documentação do projeto
+````
+
 ---
 
 ## 📄 Descrição dos Principais Arquivos
@@ -169,4 +169,7 @@ Repositório: `EGT_Site_dev`
 
 ## 📄 Licença
 
+Projeto de uso interno / em desenvolvimento.
+
+```
 Projeto de uso interno / em desenvolvimento / A Daponta's® production.
