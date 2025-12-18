@@ -1,4 +1,3 @@
-````md
 # EGT Site – Ambiente de Desenvolvimento
 
 Projeto de site desenvolvido utilizando **Vite** como bundler e ambiente de desenvolvimento moderno para front-end.  
@@ -18,7 +17,6 @@ Este repositório contém a estrutura base do site, incluindo arquivos de config
 
 ## 📁 Estrutura Completa de Pastas e Arquivos
 
-```text
 EGT_Site_dev/
 │
 ├── public/
@@ -57,8 +55,6 @@ EGT_Site_dev/
 │
 └── README.md
     └── documentação do projeto
-````
-
 ---
 
 ## 📄 Descrição dos Principais Arquivos
@@ -173,17 +169,4 @@ Repositório: `EGT_Site_dev`
 
 ## 📄 Licença
 
-Projeto de uso interno / em desenvolvimento.
-
-```
-
----
-
-Se quiser, no próximo passo eu posso:
-
-- 🔧 **ajustar o README pra React/Vue** (caso você vá migrar)
-- 🧱 **padronizar a estrutura do `src/`** (components, pages, services, etc.)
-- 📘 escrever um **README ainda mais técnico** (nível empresa / documentação oficial)
-
-Só me fala qual o próximo passo 😉
-```
+Projeto de uso interno / em desenvolvimento / A Daponta's® production.
